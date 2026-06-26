@@ -1,0 +1,1137 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Task6-WorkTypeSalaryDistributionBoxPlot' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='job_descriptions' inline='true' name='federated.1p5hg1j05lupl9130h2171q6j2e9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='job_descriptions' name='textscan.18j6ued0zf0lfs1aqx1n81y373q7'>
+            <connection class='textscan' directory='C:/Users/Harsh/archive (3)' filename='job_descriptions.csv' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18j6ued0zf0lfs1aqx1n81y373q7' name='job_descriptions.csv' table='[job_descriptions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Job Id' ordinal='0' />
+            <column datatype='string' name='Experience' ordinal='1' />
+            <column datatype='string' name='Qualifications' ordinal='2' />
+            <column datatype='string' name='Salary Range' ordinal='3' />
+            <column datatype='string' name='location' ordinal='4' />
+            <column datatype='string' name='Country' ordinal='5' />
+            <column datatype='real' name='latitude' ordinal='6' />
+            <column datatype='real' name='longitude' ordinal='7' />
+            <column datatype='string' name='Work Type' ordinal='8' />
+            <column datatype='integer' name='Company Size' ordinal='9' />
+            <column datatype='date' name='Job Posting Date' ordinal='10' />
+            <column datatype='string' name='Preference' ordinal='11' />
+            <column datatype='string' name='Contact Person' ordinal='12' />
+            <column datatype='string' name='Contact' ordinal='13' />
+            <column datatype='string' name='Job Title' ordinal='14' />
+            <column datatype='string' name='Role' ordinal='15' />
+            <column datatype='string' name='Job Portal' ordinal='16' />
+            <column datatype='string' name='Job Description' ordinal='17' />
+            <column datatype='string' name='Benefits' ordinal='18' />
+            <column datatype='string' name='skills' ordinal='19' />
+            <column datatype='string' name='Responsibilities' ordinal='20' />
+            <column datatype='string' name='Company' ordinal='21' />
+            <column datatype='string' name='Company Profile' ordinal='22' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Job Id]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Job Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Experience</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Experience]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Experience</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Qualifications</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Qualifications]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Qualifications</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salary Range</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Salary Range]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Salary Range</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Work Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Work Type]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Work Type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company Size</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Company Size]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Company Size</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Posting Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Job Posting Date]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Job Posting Date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Preference</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Preference]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Preference</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contact Person</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contact Person]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Contact Person</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Contact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Contact]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Contact</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Title]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Job Title</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Role</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Role]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Role</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Portal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Portal]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Job Portal</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Job Description]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Job Description</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Benefits</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Benefits]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Benefits</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>skills</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[skills]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>skills</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Responsibilities</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Responsibilities]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Responsibilities</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Company</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company Profile</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company Profile]</local-name>
+            <parent-name>[job_descriptions.csv]</parent-name>
+            <remote-alias>Company Profile</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='JobTitle_Valid' datatype='boolean' name='[Calculation_0729267824930816]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='NOT CONTAINS(TRIM([Job Title]),&quot; &quot;)&#13;&#10;AND&#13;&#10;LEN(TRIM([Job Title])) &lt; 10' />
+      </column>
+      <column caption='Experience_Even' datatype='boolean' name='[Calculation_0729267825606657]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='INT([Experience]) % 2 = 0' />
+      </column>
+      <column caption='Contact_Contains_E' datatype='boolean' name='[Calculation_0729267825983490]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CONTAINS(LOWER([Contact Person]),&quot;e&quot;)' />
+      </column>
+      <column caption='Test_Low' datatype='string' name='[Calculation_0729267834589188]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT([Salary Range], &quot;-&quot;, 1)' />
+      </column>
+      <column caption='Salary' datatype='real' name='[Calculation_0729267835351045]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(&#13;&#10;REPLACE(&#13;&#10;REPLACE(&#13;&#10;SPLIT([Salary Range], &quot;-&quot;, 1),&#13;&#10;&quot;$&quot;,&#13;&#10;&quot;&quot;&#13;&#10;),&#13;&#10;&quot;K&quot;,&#13;&#10;&quot;&quot;&#13;&#10;)&#13;&#10;)' />
+      </column>
+      <column caption='Salary_Number_Check' datatype='boolean' name='[Calculation_0729267836194822]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='ISNULL([Calculation_0729267835351045])' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Job Id]' role='dimension' type='ordinal' />
+      <column caption='job_descriptions.csv' datatype='table' name='[__tableau_internal_object_id__].[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Skills' datatype='string' name='[skills]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Harsh/AppData/Local/Temp/TableauTemp/#TableauTemp_1qlzuxc0tx2q6v13uhycn172kb18.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/26/2026 10:48:58 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Job Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Job Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1615940</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Experience</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Experience]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Experience</remote-alias>
+              <ordinal>1</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Qualifications</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Qualifications]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Qualifications</remote-alias>
+              <ordinal>2</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Salary Range</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Salary Range]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Salary Range</remote-alias>
+              <ordinal>3</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>561</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>4</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>214</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>5</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>216</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>216</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>7</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>216</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Work Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Work Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Work Type</remote-alias>
+              <ordinal>8</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company Size</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Company Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company Size</remote-alias>
+              <ordinal>9</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>432316</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Posting Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Job Posting Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Posting Date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>731</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Preference</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Preference]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Preference</remote-alias>
+              <ordinal>11</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contact Person</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contact Person]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contact Person</remote-alias>
+              <ordinal>12</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>310014</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Contact</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Contact]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Contact</remote-alias>
+              <ordinal>13</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1615940</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Title</remote-alias>
+              <ordinal>14</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>147</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Role</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Role]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Role</remote-alias>
+              <ordinal>15</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>376</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Portal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Portal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Portal</remote-alias>
+              <ordinal>16</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Description</remote-alias>
+              <ordinal>17</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>376</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Benefits</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Benefits]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Benefits</remote-alias>
+              <ordinal>18</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>skills</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[skills]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>skills</remote-alias>
+              <ordinal>19</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>376</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Responsibilities</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Responsibilities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Responsibilities</remote-alias>
+              <ordinal>20</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>375</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company</remote-alias>
+              <ordinal>21</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>901</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company Profile</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company Profile]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company Profile</remote-alias>
+              <ordinal>22</ordinal>
+              <family>job_descriptions.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>898</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[job_descriptions.csv_A68539B5903C4A50A2017C0638C46416]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='job_descriptions.csv' id='job_descriptions.csv_A68539B5903C4A50A2017C0638C46416'>
+            <properties context=''>
+              <relation connection='textscan.18j6ued0zf0lfs1aqx1n81y373q7' name='job_descriptions.csv' table='[job_descriptions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Job Id' ordinal='0' />
+                  <column datatype='string' name='Experience' ordinal='1' />
+                  <column datatype='string' name='Qualifications' ordinal='2' />
+                  <column datatype='string' name='Salary Range' ordinal='3' />
+                  <column datatype='string' name='location' ordinal='4' />
+                  <column datatype='string' name='Country' ordinal='5' />
+                  <column datatype='real' name='latitude' ordinal='6' />
+                  <column datatype='real' name='longitude' ordinal='7' />
+                  <column datatype='string' name='Work Type' ordinal='8' />
+                  <column datatype='integer' name='Company Size' ordinal='9' />
+                  <column datatype='date' name='Job Posting Date' ordinal='10' />
+                  <column datatype='string' name='Preference' ordinal='11' />
+                  <column datatype='string' name='Contact Person' ordinal='12' />
+                  <column datatype='string' name='Contact' ordinal='13' />
+                  <column datatype='string' name='Job Title' ordinal='14' />
+                  <column datatype='string' name='Role' ordinal='15' />
+                  <column datatype='string' name='Job Portal' ordinal='16' />
+                  <column datatype='string' name='Job Description' ordinal='17' />
+                  <column datatype='string' name='Benefits' ordinal='18' />
+                  <column datatype='string' name='skills' ordinal='19' />
+                  <column datatype='string' name='Responsibilities' ordinal='20' />
+                  <column datatype='string' name='Company' ordinal='21' />
+                  <column datatype='string' name='Company Profile' ordinal='22' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Task 6 – Work Type Salary Distribution (Box Plot)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='Sheet1' path='/workbooks/Task6-WorkTypeSalaryDistributionBoxPlot' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='job_descriptions' name='federated.1p5hg1j05lupl9130h2171q6j2e9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1p5hg1j05lupl9130h2171q6j2e9'>
+            <column caption='JobTitle_Valid' datatype='boolean' name='[Calculation_0729267824930816]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='NOT CONTAINS(TRIM([Job Title]),&quot; &quot;)&#13;&#10;AND&#13;&#10;LEN(TRIM([Job Title])) &lt; 10' />
+            </column>
+            <column caption='Contact_Contains_E' datatype='boolean' name='[Calculation_0729267825983490]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CONTAINS(LOWER([Contact Person]),&quot;e&quot;)' />
+            </column>
+            <column caption='Salary' datatype='real' name='[Calculation_0729267835351045]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(&#13;&#10;REPLACE(&#13;&#10;REPLACE(&#13;&#10;SPLIT([Salary Range], &quot;-&quot;, 1),&#13;&#10;&quot;$&quot;,&#13;&#10;&quot;&quot;&#13;&#10;),&#13;&#10;&quot;K&quot;,&#13;&#10;&quot;&quot;&#13;&#10;)&#13;&#10;)' />
+            </column>
+            <column datatype='integer' name='[Company Size]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Contact Person]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[Experience]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Job Id]' role='dimension' type='ordinal' />
+            <column datatype='date' name='[Job Posting Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Job Title]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Salary Range]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Work Type]' role='dimension' type='nominal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column-instance column='[Calculation_0729267824930816]' derivation='None' name='[none:Calculation_0729267824930816:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0729267825983490]' derivation='None' name='[none:Calculation_0729267825983490:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Company Size]' derivation='None' name='[none:Company Size:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Experience]' derivation='None' name='[none:Experience:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Job Id]' derivation='None' name='[none:Job Id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Job Posting Date]' derivation='None' name='[none:Job Posting Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Work Type]' derivation='None' name='[none:Work Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0729267835351045]' derivation='Sum' name='[sum:Calculation_0729267835351045:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Calculation_0729267824930816:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0729267824930816:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Calculation_0729267825983490:nk]'>
+            <groupfilter function='member' level='[none:Calculation_0729267825983490:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Company Size:qk]' included-values='in-range'>
+            <max>49999</max>
+          </filter>
+          <filter class='categorical' column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Country:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Country:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Afghanistan&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Albania&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Algeria&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;American Samoa&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Andorra&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Angola&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Antigua and Barbuda&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Argentina&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Armenia&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Aruba&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Australia&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Austria&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Azerbaijan&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bahamas, The&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bahrain&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bangladesh&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Barbados&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Belarus&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Belgium&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Belize&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Benin&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bermuda&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bhutan&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bolivia&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bosnia and Herzegovina&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Botswana&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Brazil&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;British Virgin Islands&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Brunei&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Bulgaria&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Burkina Faso&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Burundi&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cabo Verde&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cambodia&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cameroon&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Canada&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cayman Islands&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Central African Republic&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Chad&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Chile&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;China&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Colombia&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Comoros&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Costa Rica&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cote d&apos;Ivoire&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Croatia&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cuba&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Curacao&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Cyprus&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Czech Republic&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Democratic Republic Of Congo&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Denmark&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Djibouti&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Dominica&quot;' />
+                <groupfilter function='member' level='[none:Country:nk]' member='&quot;Dominican Republic&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Experience:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;0 to 10 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;0 to 11 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;0 to 12 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;0 to 13 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;0 to 14 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;0 to 15 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;0 to 8 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;0 to 9 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;2 to 10 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;2 to 11 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;2 to 12 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;2 to 13 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;2 to 14 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;2 to 15 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;2 to 8 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;2 to 9 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;4 to 10 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;4 to 11 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;4 to 12 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;4 to 13 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;4 to 14 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;4 to 15 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;4 to 8 Years&quot;' />
+              <groupfilter function='member' level='[none:Experience:nk]' member='&quot;4 to 9 Years&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Job Posting Date:qk]' included-values='in-range'>
+            <min>#2021-01-01#</min>
+            <max>#2023-12-31#</max>
+          </filter>
+          <filter class='categorical' column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Work Type:nk]'>
+            <groupfilter function='member' level='[none:Work Type:nk]' member='&quot;Intern&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:latitude:qk]' included-values='in-range'>
+            <max>9.9900000000000002</max>
+          </filter>
+          <slices>
+            <column>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Work Type:nk]</column>
+            <column>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:latitude:qk]</column>
+            <column>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Country:nk]</column>
+            <column>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Calculation_0729267824930816:nk]</column>
+            <column>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Company Size:qk]</column>
+            <column>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Experience:nk]</column>
+            <column>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Job Posting Date:qk]</column>
+            <column>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Calculation_0729267825983490:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Work Type:nk]' value='24' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Work Type:nk]' value='647' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Job Id:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[sum:Calculation_0729267835351045:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1p5hg1j05lupl9130h2171q6j2e9].[sum:Calculation_0729267835351045:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1p5hg1j05lupl9130h2171q6j2e9].[sum:Calculation_0729267835351045:qk]</rows>
+        <cols>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Work Type:nk]</cols>
+      </table>
+      <simple-id uuid='{2757FCA6-B8C2-4B29-9AEA-7AA3C5180F6F}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Calculation_0729267824930816:nk]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Calculation_0729267825983490:nk]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Calculation_0729267834589188:nk]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Company Size:qk]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Country:nk]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Experience:nk]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Job Id:ok]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Job Posting Date:qk]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Salary Range:nk]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:Work Type:nk]</field>
+            <field>[federated.1p5hg1j05lupl9130h2171q6j2e9].[none:latitude:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{60642E58-D3FC-4520-BCB1-DD5825243D76}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      yzhw8nwAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
